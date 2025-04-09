@@ -1,0 +1,23 @@
+:root {
+    
+    /* =========== COLORS =========== */
+
+    --color-backgroundWeb: #E5E7EB;
+    --color-background: #F9FAFB;
+    --color-mainText: #111827;
+    --color-description: #6B7280;
+    --color-button: #3B82F6;
+    --color-complete: #10B981;
+
+    /* =========== TEXTS SIZES =========== */
+
+    --text-tiny: 0.7rem;
+    --text-normal: 1rem;
+    --text-title: 2rem;
+
+    /* =========== FONT SIZES =========== */
+
+    --font-description: 200;
+    --font-task: 400;
+    --font-bold: 600;
+}
