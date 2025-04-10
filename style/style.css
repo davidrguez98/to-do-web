@@ -8,39 +8,44 @@ html {
     background-color: var(--color-backgroundWeb);
 }
 
-main {
-    max-width: 700px;
-}
+@media (max-width: 768px) {
 
-.main-content {
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--color-background);
-    padding: 1.5em;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    margin-top: 10%;
-
-    h1 {
-        font-weight: var(--font-bold);
-        font-size: var(--text-title);
-        margin-bottom: 1em;
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
     }
     
-    .tasks {
+    .todo-list {
         display: flex;
+        flex-direction: column;
         width: 100%;
-
-        li:first-child {
-            width: 5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        padding: 1.5em;
+        margin-top: 10%;
+        border-radius: 12px;
+        background-color: var(--color-background);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        
+        h1 {
+            font-weight: var(--font-bold);
+            font-size: var(--text-title);
+            margin-bottom: 1em;
         }
-   
+        
+        .tasks {
+            display: flex;
+            width: 100%;
+            
+            li:first-child {
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .tick-button {
+            }
+            
             .task {
                 display: flex;
                 flex-direction: column;
@@ -55,39 +60,253 @@ main {
                     border: none;
                     width: 100%;
                 }
-
+                
                 .task-name {
                     color: var(--color-mainText);
-                    font-size: var(--text-normal);
+                    font-size: var(--text-task);
                     font-weight: var(--font-bold);
                 }
-
+                
                 .task-description {
                     color: var(--color-description);
                     font-size: var(--text-tiny);
                 }
             }
-    }
-
-    .new-task-button {
-        font-size: var(--text-normal);
-        margin-top: 1.5em;
-        border: none;
-        background-color: var(--color-button);
-        color: var(--color-background);
-        display: flex;
-        justify-content: center;
-        gap: 0.5em;
-        padding: 16px;
-        border-radius: 12px;
-        font-weight: var(--font-bold);
-
-
-
-        .bi bi-plus-circle{
-            background-color: var(--color-button);
-            color: var(--color-button);
         }
         
+        .new-task-button {
+            font-size: var(--text-normal);
+            margin-top: 1.5em;
+            border: none;
+            background-color: var(--color-button);
+            color: var(--color-background);
+            display: flex;
+            justify-content: center;
+            gap: 0.5em;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: var(--font-bold);
+            
+            
+            
+            .bi bi-plus-circle{
+                background-color: var(--color-button);
+                color: var(--color-button);
+            }
+            
+        }
+    }
+    
+    .new-task { /* LE QUIERO AÑADIR FILTRO BLUR DEL FONDO */
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+        border-radius: 12px;
+        background-color: var(--color-background);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(100px);
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+        }
+        
+        .new-task-name, .new-task-description {
+            width: 100%;
+            margin: 0;
+            background-color: transparent;
+            border-radius: 8px;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+            color: var(--color-mainText);
+            font-size: var(--text-normal);
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 10px 14px;
+        
+        
+        ::placeholder{
+            color: var(--color-description);
+            
+        }
+    }
+    
+    li:last-child {
+        display: flex;
+        justify-content: end;
+        
+        .new-task-add-button {
+            background-color: var(--color-button);
+            color: var(--color-background);
+            font-size: var(--text-normal);
+            font-weight: var(--font-bold);
+            border: none;
+            padding: 0.4em 1em;
+            border-radius: 12px;
+            
+            .bi bi-plus-lg{
+                background-color: var(--color-button);
+                color: var(--color-button);
+            }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 769px) {
+     
+    main {
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .todo-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5em;
+        margin-top: 10%;
+        border-radius: 12px;
+        background-color: var(--color-background);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        
+        h1 {
+            font-weight: var(--font-bold);
+            font-size: var(--text-title);
+            margin-bottom: 1em;
+        }
+        
+        .tasks {
+            display: flex;
+            width: 100%;
+            
+            li:first-child {
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .tick-button {
+            }
+            
+            .task {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                
+                input {
+                    margin: 0;
+                    background-color: transparent;
+                    border: none;
+                    width: 100%;
+                }
+                
+                .task-name {
+                    color: var(--color-mainText);
+                    font-size: var(--text-task);
+                    font-weight: var(--font-bold);
+                }
+                
+                .task-description {
+                    color: var(--color-description);
+                    font-size: var(--text-tiny);
+                }
+            }
+        }
+        
+        .new-task-button {
+            font-size: var(--text-normal);
+            margin-top: 1.5em;
+            border: none;
+            background-color: var(--color-button);
+            color: var(--color-background);
+            display: flex;
+            justify-content: center;
+            gap: 0.5em;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: var(--font-bold);
+            
+            
+            
+            .bi bi-plus-circle{
+                background-color: var(--color-button);
+                color: var(--color-button);
+            }
+            
+        }
+    }
+    
+    .new-task { /* LE QUIERO AÑADIR FILTRO BLUR DEL FONDO */
+        position: absolute;
+        justify-content: center;
+        width: 35rem;
+        padding: 1em;
+        margin-top: 10rem;
+        border-radius: 12px;
+        background-color: var(--color-background);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+        }
+        
+        .new-task-name, .new-task-description {
+            width: 100%;
+            margin: 0;
+            background-color: transparent;
+            border-radius: 8px;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        color: var(--color-mainText);
+        font-size: var(--text-normal);
+        border: 1px solid #D1D5DB;
+        border-radius: 8px;
+        padding: 10px 14px;
+        
+        
+        ::placeholder{
+            color: var(--color-description);
+            
+        }
+    }
+    
+    li:last-child {
+        display: flex;
+        justify-content: end;
+        
+        .new-task-add-button {
+            background-color: var(--color-button);
+            color: var(--color-background);
+            font-size: var(--text-normal);
+            font-weight: var(--font-bold);
+            border: none;
+            padding: 0.4em 1em;
+            border-radius: 12px;
+            
+            .bi bi-plus-lg{
+                background-color: var(--color-button);
+                color: var(--color-button);
+            }
+            }
+        }
     }
 }
