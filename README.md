@@ -1,6 +1,6 @@
 # ✅ To-Do Web App
 
-Este proyecto es una aplicación web de lista de tareas (To-Do List), desarrollada como práctica de **HTML**, **CSS** y **JavaScript** puro. Permite añadir, visualizar y eliminar tareas con una interfaz limpia y responsive.
+Este proyecto es una aplicación web de lista de tareas (To-Do List), desarrollada como práctica de **HTML**, **CSS** y **JavaScript** puro. Permite añadir, editar, marcar como realizadas y visualizar tareas con una interfaz limpia y responsive.
 
 ---
 
