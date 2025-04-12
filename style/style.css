@@ -12,8 +12,7 @@ html {
 
     main {
         display: flex;
-        justify-content: center;
-        margin: 0 auto;
+        flex-direction: column;
     }
     
     .todo-list {
@@ -35,6 +34,7 @@ html {
         .tasks {
             display: flex;
             width: 100%;
+            margin-top: 0.5em;
             
             li:first-child {
                 width: 5%;
@@ -44,6 +44,20 @@ html {
             }
             
             .tick-button {
+                margin-right: 0.5em;
+
+                .tick-button-2 {
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+                    color: rgba(0, 0, 0, 0.096);
+                }
+                .tick-button-2:hover {
+                    color: rgba(0, 0, 0, 0.200);
+                }
+
+                .tick-button-2.completed {
+                    color: rgb(0, 128, 0);
+                }
             }
             
             .task {
@@ -96,28 +110,15 @@ html {
             
         }
     }
+
     
-    .new-task { /* LE QUIERO AÑADIR FILTRO BLUR DEL FONDO */
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .new-task { /* LE QUIERO AÑADIR FILTRO BLUR DEL FONDO */ 
         width: 100%;
         padding: 1em;
+        margin-top: 10rem;
         border-radius: 12px;
         background-color: var(--color-background);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        backdrop-filter: blur(100px);
-        
-        ul {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-            width: 100%;
-        }
         
         .new-task-name, .new-task-description {
             width: 100%;
@@ -133,16 +134,12 @@ html {
             padding: 10px 14px;
         
         
-        ::placeholder{
-            color: var(--color-description);
+            ::placeholder{
+                color: var(--color-description);
             
+            }
         }
-    }
     
-    li:last-child {
-        display: flex;
-        justify-content: end;
-        
         .new-task-add-button {
             background-color: var(--color-button);
             color: var(--color-background);
@@ -155,8 +152,8 @@ html {
             .bi bi-plus-lg{
                 background-color: var(--color-button);
                 color: var(--color-button);
-            }
-            }
+                }
+            
         }
     }
 
@@ -199,6 +196,19 @@ html {
             }
             
             .tick-button {
+
+                .tick-button-2 {
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+                    color: rgba(0, 0, 0, 0.096);
+                }
+                .tick-button-2:hover {
+                    color: rgba(0, 0, 0, 0.200);
+                }
+
+                .tick-button-2.completed {
+                    color: rgb(0, 128, 0);
+                }
             }
             
             .task {
