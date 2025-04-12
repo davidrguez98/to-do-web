@@ -196,6 +196,7 @@ html {
             }
             
             .tick-button {
+                margin-right: 0.5em;
 
                 .tick-button-2 {
                     cursor: pointer;
