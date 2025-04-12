@@ -19,27 +19,18 @@
         <section class="todo-list">
             <h1 class="title">To-Do List</h1>
             <div class="complete-task">
-                <ul class="tasks">
-                    <li class="tick-button">
-                        <i class="bi bi-circle tick-button"></i>
-                    </li>
-                    <li class="task">
-                        <div >
-                            <input type="text" class="task-name">
-                            <input type="text" class="task-description">
-                        </div>
-                    </li>
-                </ul>
             </div>
-            <button class="new-task-button"><i class="bi bi-plus-circle"></i> Add Task</button> <!-- Añadir color al botón -->
+            <button type="submit" class="new-task-button"><i class="bi bi-plus-circle"></i> Add Task</button> <!-- Añadir color al botón -->
         </section>
         <section class="new-task">
-            <ul>
-                <li><input type="text" class="new-task-name" placeholder="Task's name"></li>
-                <li><input type="text" class="new-task-description" placeholder="Task's description"></li>
-                <li><button class="new-task-add-button"><i class="bi bi-plus-lg"></i> Add</button></li>
-            </ul>
+            <form action="/form" id="new-task-form" method="post">
+                <input type="text" name="taskName" class="new-task-name" placeholder="Task's name">
+                <input type="text" name="taskDescription" class="new-task-description" placeholder="Task's description">
+                <button type="submit" class="new-task-add-button"><i class="bi bi-plus-lg"></i> Add</button>
+            </form>
         </section>
     </main>
+
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>

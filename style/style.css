@@ -254,7 +254,6 @@ html {
     
     .new-task { /* LE QUIERO AÑADIR FILTRO BLUR DEL FONDO */
         position: absolute;
-        justify-content: center;
         width: 35rem;
         padding: 1em;
         margin-top: 10rem;
@@ -262,37 +261,26 @@ html {
         background-color: var(--color-background);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         
-        ul {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-            width: 100%;
-        }
-        
         .new-task-name, .new-task-description {
             width: 100%;
             margin: 0;
             background-color: transparent;
             border-radius: 8px;
-        padding: 0.5em;
-        margin-bottom: 0.5em;
-        color: var(--color-mainText);
-        font-size: var(--text-normal);
-        border: 1px solid #D1D5DB;
-        border-radius: 8px;
-        padding: 10px 14px;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+            color: var(--color-mainText);
+            font-size: var(--text-normal);
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 10px 14px;
         
         
-        ::placeholder{
-            color: var(--color-description);
+            ::placeholder{
+                color: var(--color-description);
             
+            }
         }
-    }
     
-    li:last-child {
-        display: flex;
-        justify-content: end;
-        
         .new-task-add-button {
             background-color: var(--color-button);
             color: var(--color-background);
@@ -305,8 +293,8 @@ html {
             .bi bi-plus-lg{
                 background-color: var(--color-button);
                 color: var(--color-button);
-            }
-            }
+                }
+            
         }
     }
 }
