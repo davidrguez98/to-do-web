@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación web de lista de tareas (To-Do List), desarrollada como práctica de **HTML**, **CSS** y **JavaScript** puro. Permite añadir, editar, marcar como realizadas y visualizar tareas con una interfaz limpia y responsive.
 
----
+
 
 ## 🚀 Tecnologías utilizadas
 
@@ -11,7 +11,7 @@ Este proyecto es una aplicación web de lista de tareas (To-Do List), desarrolla
 - JavaScript (DOM, eventos, clases)
 - Bootstrap Icons
 
----
+
 
 ## 📦 Instalación
 
@@ -22,7 +22,7 @@ Simplemente clona el repositorio y abre el archivo `index.html` en tu navegador:
 git clone https://github.com/davidrguez98/TO-DO-WEB
 ```
 
----
+
 
 ## 📸 Capturas de pantalla
 
@@ -34,7 +34,7 @@ git clone https://github.com/davidrguez98/TO-DO-WEB
 ![Versión móvil 1](./screenshots/mobilesize-1.PNG.jpg)  
 ![Versión móvil 2](./screenshots/mobilesize-2.PNG.jpg)
 
----
+
 
 ## 🎯 Objetivo del proyecto
 
@@ -43,7 +43,7 @@ git clone https://github.com/davidrguez98/TO-DO-WEB
 - Usar **interacción dinámica** con el DOM (crear tareas, eliminar, animaciones de estado).
 - Organizar bien la estructura del proyecto: separación por carpetas `scripts/` y `style/`.
 
----
+
 
 ## 📚 Aprendizajes
 
@@ -53,7 +53,7 @@ git clone https://github.com/davidrguez98/TO-DO-WEB
 - Gestión de arrays de objetos y renderizado de componentes HTML con JavaScript.
 - Efectos visuales: animación al marcar tarea, `blur` de fondo en el formulario, etc.
 
----
+
 
 ## 📁 Estructura del proyecto
 
@@ -74,14 +74,14 @@ TO-DO-WEB
 └── README.md
 ```
 
----
+
 
 ## 📌 Notas
 
 Este proyecto es parte del bootcamp de desarrollo web y se centra tanto en **lógica JS** como en la presentación visual.  
 Se han aplicado buenas prácticas de estructura y diseño, y se ha trabajado con estilos modernos y claros.
 
----
+
 
 ## 👩‍💻 Contacto
 
