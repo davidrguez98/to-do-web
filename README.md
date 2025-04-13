@@ -76,13 +76,6 @@ TO-DO-WEB
 
 
 
-## 📌 Notas
-
-Este proyecto es parte del bootcamp de desarrollo web y se centra tanto en **lógica JS** como en la presentación visual.  
-Se han aplicado buenas prácticas de estructura y diseño, y se ha trabajado con estilos modernos y claros.
-
-
-
 ## 👩‍💻 Contacto
 
 Si quieres ver más proyectos o ponerte en contacto conmigo:
